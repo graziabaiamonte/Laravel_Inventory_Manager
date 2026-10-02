@@ -1,0 +1,8 @@
+{
+    // Laravel Pint formatter
+    "recommendations": [
+        "open-southeners.laravel-pint",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ]
+}

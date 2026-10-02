@@ -1,0 +1,56 @@
+{
+    // Enable Laravel Pint extension
+    "laravel-pint.enable": true,
+    "laravel-pint.preset": "laravel",
+
+    // The runInLaravelSail setting is not reliable, so Pint runs on the host
+    // machine rather than the sail container and needs php with mbstring
+    // "laravel-pint.runInLaravelSail": true,
+    // "laravel-pint.enableDebugLogs": true,
+
+    // Set Laravel Pint extension as the default
+    // formatter for all PHP files
+    "[php]": {
+        "editor.defaultFormatter": "open-southeners.laravel-pint"
+    },
+
+    // Set ES Lint extension as the default
+    // formatter for all JS files
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // Enable VsCode Format on Save
+    "editor.formatOnSave": true,
+
+    // Force vscode to use typescript version from the project, rather then his own built in one
+    // version mismatching can cause intelliSense to freeze and skyrocket the cpu usage
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "php.version": "8.2",
+
+    // Keep the file watcher and search index off generated / vendored trees.
+    // Without these, VsCode watches ~52k files (vendor, storage, node_modules)
+    "files.watcherExclude": {
+        "**/vendor/**": true,
+        "**/node_modules/**": true,
+        "**/storage/logs/**": true,
+        "**/storage/framework/**": true,
+        "**/public/build/**": true,
+        "**/.git/objects/**": true
+    },
+    "search.exclude": {
+        "**/vendor": true,
+        "**/node_modules": true,
+        "**/storage/logs": true,
+        "**/storage/framework": true,
+        "**/public/build": true,
+        "**/composer.lock": true,
+        "**/package-lock.json": true
+    },
+}

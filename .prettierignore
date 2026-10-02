@@ -1,0 +1,16 @@
+# dot-files, dot-folder and /node_modules are ignore by default
+/app
+/bootstrap
+/config
+/database
+/lang
+/public
+/resources/css
+/resources/lang
+/resources/views
+/routes
+/storage
+/tests
+/vendor
+*.js
+*.json
